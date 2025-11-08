@@ -1,0 +1,105 @@
+name: Bug Report 🐛
+description: Melde einen Fehler oder unerwartetes Verhalten
+title: "[BUG] Kurze Beschreibung des Problems"
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Bitte fülle dieses Formular so vollständig wie möglich aus.**  
+        Dies hilft uns, den Fehler schneller zu reproduzieren und zu beheben.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibe den Bug
+      description: Eine klare und prägnante Beschreibung des Fehlers.
+      placeholder: |
+        Eine klare und prägnante Beschreibung des Fehlers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduzieren
+      description: Schritte zur Reproduktion des Verhaltens.
+      placeholder: |
+        1. Gehe zu '...'
+        2. Klick auf '....'
+        3. Scrolle zu '....'
+        4. Siehe folgenden Fehler: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+      description: Eine klare und prägnante Beschreibung dessen, was du erwartet hast.
+      placeholder: Eine klare und prägnante Beschreibung dessen, was du erwartet hast.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Füge ggf. Screenshots hinzu, um dein Problem zu verdeutlichen.
+      placeholder: Ziehe Screenshots hierher oder füge sie per Copy & Paste ein.
+
+  - type: markdown
+    attributes:
+      value: "### Desktop (bitte die folgenden Angaben ausfüllen)"
+
+  - type: input
+    id: desktop_os
+    attributes:
+      label: Betriebssystem
+      placeholder: z. B. Windows 11, macOS 14, Ubuntu 24.04
+
+  - type: input
+    id: desktop_browser
+    attributes:
+      label: Browser
+      placeholder: z. B. Chrome, Firefox, Safari
+
+  - type: input
+    id: desktop_version
+    attributes:
+      label: Version
+      placeholder: z. B. 22
+
+  - type: markdown
+    attributes:
+      value: "### Smartphone (bitte die folgenden Angaben ausfüllen)"
+
+  - type: input
+    id: phone_device
+    attributes:
+      label: Gerät
+      placeholder: z. B. iPhone 15, Samsung Galaxy S22
+
+  - type: input
+    id: phone_os
+    attributes:
+      label: Betriebssystem
+      placeholder: z. B. iOS 18.1, Android 14
+
+  - type: input
+    id: phone_browser
+    attributes:
+      label: Browser
+      placeholder: z. B. Safari, Chrome, Standardbrowser
+
+  - type: input
+    id: phone_version
+    attributes:
+      label: Version
+      placeholder: z. B. 22
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Füge hier weitere Informationen zum Problem hinzu.
+      placeholder: Zusätzliche Details, Logs oder Hinweise.
